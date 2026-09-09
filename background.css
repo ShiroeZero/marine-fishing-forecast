@@ -1,0 +1,18 @@
+/* Full-screen marine photography background — sits behind the glass app UI. */
+html,body{min-height:100%;}
+body{background:#02111d!important;}
+body:before{
+  background:
+    linear-gradient(180deg,rgba(2,15,28,.48) 0%,rgba(2,18,31,.60) 42%,rgba(1,9,16,.92) 100%),
+    url('https://images.unsplash.com/photo-1634043270873-f2f830e5d4bf?auto=format&fit=crop&fm=jpg&q=82&w=2400') center center/cover fixed no-repeat!important;
+  opacity:1;
+}
+body:after{
+  opacity:.12!important;
+  background:repeating-radial-gradient(ellipse at 50% 100%,transparent 0 22px,rgba(64,203,255,.20) 23px 25px,transparent 26px 50px)!important;
+}
+.sidebar{background:linear-gradient(180deg,rgba(2,17,30,.78),rgba(2,10,18,.72))!important;}
+.topbar{background:rgba(2,14,25,.55)!important;}
+.hero{background:linear-gradient(110deg,rgba(3,25,41,.76),rgba(4,48,70,.48))!important;backdrop-filter:blur(3px);}
+.card{background:linear-gradient(145deg,rgba(8,36,56,.70),rgba(5,22,36,.66))!important;}
+@media(max-width:760px){body:before{background-position:center center!important;background-attachment:scroll!important;}}
